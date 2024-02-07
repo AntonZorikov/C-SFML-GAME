@@ -1,0 +1,123 @@
+﻿  Effect.cpp
+D:\Dungeon — копия\SFMLProject\SFMLProject\Effect.cpp(4,9): warning C4244: инициализация: преобразование "float" в "int", возможна потеря данных
+  Item.cpp
+  Person.cpp
+D:\Dungeon — копия\SFMLProject\SFMLProject\Person.cpp(20,9): warning C4244: инициализация: преобразование "double" в "int", возможна потеря данных
+D:\Dungeon — копия\SFMLProject\SFMLProject\Person.cpp(21,9): warning C4244: инициализация: преобразование "double" в "int", возможна потеря данных
+D:\Dungeon — копия\SFMLProject\SFMLProject\Person.cpp(23,11): warning C4244: =: преобразование "double" в "int", возможна потеря данных
+  Player.cpp
+  Source.cpp
+D:\Dungeon — копия\SFMLProject\SFMLProject\Person.cpp(20,9): warning C4244: инициализация: преобразование "double" в "int", возможна потеря данных
+D:\Dungeon — копия\SFMLProject\SFMLProject\Person.cpp(21,9): warning C4244: инициализация: преобразование "double" в "int", возможна потеря данных
+D:\Dungeon — копия\SFMLProject\SFMLProject\Person.cpp(23,11): warning C4244: =: преобразование "double" в "int", возможна потеря данных
+D:\Dungeon — копия\SFMLProject\SFMLProject\Source.cpp(16,8): warning C4244: инициализация: преобразование "double" в "int", возможна потеря данных
+D:\Dungeon — копия\SFMLProject\SFMLProject\Source.cpp(17,8): warning C4244: инициализация: преобразование "double" в "int", возможна потеря данных
+D:\Dungeon — копия\SFMLProject\SFMLProject\Source.cpp(19,10): warning C4244: =: преобразование "double" в "int", возможна потеря данных
+D:\Dungeon — копия\SFMLProject\SFMLProject\Source.cpp(185,24): warning C4244: =: преобразование "double" в "float", возможна потеря данных
+D:\Dungeon — копия\SFMLProject\SFMLProject\Source.cpp(324,104): warning C4244: аргумент: преобразование "int" в "T", возможна потеря данных
+          with
+          [
+              T=float
+          ]
+D:\Dungeon — копия\SFMLProject\SFMLProject\Source.cpp(324,89): warning C4244: аргумент: преобразование "int" в "T", возможна потеря данных
+          with
+          [
+              T=float
+          ]
+D:\Dungeon — копия\SFMLProject\SFMLProject\Source.cpp(324,134): warning C4244: аргумент: преобразование "int" в "T", возможна потеря данных
+          with
+          [
+              T=float
+          ]
+D:\Dungeon — копия\SFMLProject\SFMLProject\Source.cpp(324,125): warning C4244: аргумент: преобразование "int" в "T", возможна потеря данных
+          with
+          [
+              T=float
+          ]
+D:\Dungeon — копия\SFMLProject\SFMLProject\Source.cpp(328,104): warning C4244: аргумент: преобразование "int" в "T", возможна потеря данных
+          with
+          [
+              T=float
+          ]
+D:\Dungeon — копия\SFMLProject\SFMLProject\Source.cpp(328,89): warning C4244: аргумент: преобразование "int" в "T", возможна потеря данных
+          with
+          [
+              T=float
+          ]
+D:\Dungeon — копия\SFMLProject\SFMLProject\Source.cpp(328,134): warning C4244: аргумент: преобразование "int" в "T", возможна потеря данных
+          with
+          [
+              T=float
+          ]
+D:\Dungeon — копия\SFMLProject\SFMLProject\Source.cpp(328,125): warning C4244: аргумент: преобразование "int" в "T", возможна потеря данных
+          with
+          [
+              T=float
+          ]
+D:\Dungeon — копия\SFMLProject\SFMLProject\Source.cpp(332,106): warning C4244: аргумент: преобразование "int" в "T", возможна потеря данных
+          with
+          [
+              T=float
+          ]
+D:\Dungeon — копия\SFMLProject\SFMLProject\Source.cpp(332,83): warning C4244: аргумент: преобразование "int" в "T", возможна потеря данных
+          with
+          [
+              T=float
+          ]
+D:\Dungeon — копия\SFMLProject\SFMLProject\Source.cpp(332,134): warning C4244: аргумент: преобразование "int" в "T", возможна потеря данных
+          with
+          [
+              T=float
+          ]
+D:\Dungeon — копия\SFMLProject\SFMLProject\Source.cpp(332,125): warning C4244: аргумент: преобразование "int" в "T", возможна потеря данных
+          with
+          [
+              T=float
+          ]
+D:\Dungeon — копия\SFMLProject\SFMLProject\Source.cpp(336,106): warning C4244: аргумент: преобразование "int" в "T", возможна потеря данных
+          with
+          [
+              T=float
+          ]
+D:\Dungeon — копия\SFMLProject\SFMLProject\Source.cpp(336,83): warning C4244: аргумент: преобразование "int" в "T", возможна потеря данных
+          with
+          [
+              T=float
+          ]
+D:\Dungeon — копия\SFMLProject\SFMLProject\Source.cpp(336,134): warning C4244: аргумент: преобразование "int" в "T", возможна потеря данных
+          with
+          [
+              T=float
+          ]
+D:\Dungeon — копия\SFMLProject\SFMLProject\Source.cpp(336,125): warning C4244: аргумент: преобразование "int" в "T", возможна потеря данных
+          with
+          [
+              T=float
+          ]
+D:\Dungeon — копия\SFMLProject\SFMLProject\Source.cpp(546,12): warning C4244: аргумент: преобразование "time_t" в "unsigned int", возможна потеря данных
+D:\Dungeon — копия\SFMLProject\SFMLProject\Source.cpp(749,80): warning C4244: аргумент: преобразование "int" в "float", возможна потеря данных
+D:\Dungeon — копия\SFMLProject\SFMLProject\Source.cpp(749,76): warning C4244: аргумент: преобразование "int" в "float", возможна потеря данных
+D:\Dungeon — копия\SFMLProject\SFMLProject\Source.cpp(752,77): warning C4244: аргумент: преобразование "int" в "float", возможна потеря данных
+D:\Dungeon — копия\SFMLProject\SFMLProject\Source.cpp(752,73): warning C4244: аргумент: преобразование "int" в "float", возможна потеря данных
+D:\Dungeon — копия\SFMLProject\SFMLProject\Source.cpp(765,11): warning C4244: инициализация: преобразование "double" в "int", возможна потеря данных
+D:\Dungeon — копия\SFMLProject\SFMLProject\Source.cpp(765,28): warning C4244: инициализация: преобразование "double" в "int", возможна потеря данных
+D:\Dungeon — копия\SFMLProject\SFMLProject\Source.cpp(767,113): warning C4244: аргумент: преобразование "int" в "float", возможна потеря данных
+D:\Dungeon — копия\SFMLProject\SFMLProject\Source.cpp(767,109): warning C4244: аргумент: преобразование "int" в "float", возможна потеря данных
+D:\Dungeon — копия\SFMLProject\SFMLProject\Source.cpp(772,110): warning C4244: аргумент: преобразование "int" в "float", возможна потеря данных
+D:\Dungeon — копия\SFMLProject\SFMLProject\Source.cpp(772,106): warning C4244: аргумент: преобразование "int" в "float", возможна потеря данных
+D:\Dungeon — копия\SFMLProject\SFMLProject\Source.cpp(777,104): warning C4244: аргумент: преобразование "int" в "float", возможна потеря данных
+D:\Dungeon — копия\SFMLProject\SFMLProject\Source.cpp(777,100): warning C4244: аргумент: преобразование "int" в "float", возможна потеря данных
+D:\Dungeon — копия\SFMLProject\SFMLProject\Source.cpp(782,152): warning C4244: аргумент: преобразование "int" в "float", возможна потеря данных
+D:\Dungeon — копия\SFMLProject\SFMLProject\Source.cpp(783,104): warning C4244: аргумент: преобразование "int" в "float", возможна потеря данных
+D:\Dungeon — копия\SFMLProject\SFMLProject\Source.cpp(783,100): warning C4244: аргумент: преобразование "int" в "float", возможна потеря данных
+D:\Dungeon — копия\SFMLProject\SFMLProject\Source.cpp(788,77): warning C4244: аргумент: преобразование "int" в "float", возможна потеря данных
+D:\Dungeon — копия\SFMLProject\SFMLProject\Source.cpp(788,73): warning C4244: аргумент: преобразование "int" в "float", возможна потеря данных
+D:\Dungeon — копия\SFMLProject\SFMLProject\Source.cpp(794,86): warning C4244: аргумент: преобразование "int" в "float", возможна потеря данных
+D:\Dungeon — копия\SFMLProject\SFMLProject\Source.cpp(794,82): warning C4244: аргумент: преобразование "int" в "float", возможна потеря данных
+D:\Dungeon — копия\SFMLProject\SFMLProject\Source.cpp(798,150): warning C4244: аргумент: преобразование "int" в "float", возможна потеря данных
+D:\Dungeon — копия\SFMLProject\SFMLProject\Source.cpp(799,102): warning C4244: аргумент: преобразование "int" в "float", возможна потеря данных
+D:\Dungeon — копия\SFMLProject\SFMLProject\Source.cpp(799,98): warning C4244: аргумент: преобразование "int" в "float", возможна потеря данных
+  Tile.cpp
+  Создание кода...
+  LINK : не найден или не выполнена сборка D:\Dungeon — копия\SFMLProject\Debug\SFMLProject.exe при последней инкрементной компоновке; выполняется полная компоновка
+  SFMLProject.vcxproj -> D:\Dungeon — копия\SFMLProject\Debug\SFMLProject.exe

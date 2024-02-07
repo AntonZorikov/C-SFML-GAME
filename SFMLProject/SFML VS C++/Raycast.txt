@@ -1,0 +1,197 @@
+#include <SFML/Graphics.hpp>
+#include <iostream>
+#include <Windows.h>
+#include <math.h>
+
+using namespace sf;
+using namespace std;
+
+double distance(int x1, int y1, int x2, int y2)
+{
+	int a = pow(x1 - x2, 2);
+	int b = pow(y1 - y2, 2);
+	int c = a + b;
+	c = sqrt(c);
+	return c;
+}
+bool CircleCollision(CircleShape a, CircleShape b) {
+	if (distance(a.getPosition().x, a.getPosition().y, b.getPosition().x, b.getPosition().y) < a.getRadius() + b.getRadius()) {
+		return true;
+	}
+	else {
+		return false;
+	}
+}
+
+int main()
+{
+	int x, y;
+	float Vision = 0;
+
+	RenderWindow window(VideoMode(800, 600), "SFMLworks");
+	CircleShape s;
+	CircleShape shape(10.f);
+	CircleShape shape1(1.f);
+	CircleShape wall1(50.f);
+	CircleShape wall2(50.f);
+
+	wall2.setPosition(200, 400);
+	wall1.setPosition(300, 300);
+
+
+	shape1.setPosition(100, 100);
+	shape.setFillColor(Color::Red);
+	shape1.setFillColor(Color::Blue);
+
+	while (window.isOpen())
+	{
+
+		int w = 80000;
+		int iii = 0;
+		int iiii = 0;
+		int ren[50];
+		bool m = false;
+		VertexArray point(Points, w);
+
+		CircleShape Walls[2] = {wall1,wall2};
+
+
+		float xr = (shape.getPosition().x + shape.getRadius() / 2) + 100 * cos(45);
+		float yr = (shape.getPosition().y + shape.getRadius() / 2) + 100 * sin(45);
+		for (float ii = 0 - Vision; ii < 1 - Vision; ii += 0.04) {
+			iiii++;
+			for (int i = 0; i < 300; i++) {
+				float xr = (shape.getPosition().x + shape.getRadius()) + i * cos(ii);
+				float yr = (shape.getPosition().y + shape.getRadius()) + i * sin(ii);
+				iii++;
+				s = wall1;
+				if (distance(xr, yr, s.getPosition().x + s.getRadius(), s.getPosition().y + s.getRadius()) < 50 ) {
+					ren[iiii] = i;
+					m = true;
+					//cout << i << "\n";
+					break;
+				}
+				s = wall2;
+				if (distance(xr, yr, s.getPosition().x + s.getRadius(), s.getPosition().y + s.getRadius()) < 50) {
+					break;
+				}
+				point[iii].position = Vector2f(xr, yr);
+			}
+		}
+
+		if (Keyboard::isKeyPressed(Keyboard::W))
+		{
+			shape.move(0, -0.5);
+		}
+		if (Keyboard::isKeyPressed(Keyboard::A))
+		{
+			shape.move(-0.5, 0);
+		}
+		if (Keyboard::isKeyPressed(Keyboard::S))
+		{
+			shape.move(0, 0.5);
+		}
+		if (Keyboard::isKeyPressed(Keyboard::D))
+		{
+			shape.move(0.5, 0);
+		}
+		if (Keyboard::isKeyPressed(Keyboard::Q))
+		{
+			Vision-= 0.01;
+		}
+		if (Keyboard::isKeyPressed(Keyboard::E))
+		{
+			Vision+= 0.01;
+		}
+		Event event;
+		while (window.pollEvent(event))
+		{
+			if (event.type == Event::Closed)
+				window.close();
+		}
+		cout << ren[0] << "\n";
+
+
+		window.clear();
+
+		
+		//window.draw(wall1);
+		//window.draw(wall2);
+
+		window.draw(point);
+		window.draw(shape);
+		
+		window.display();
+
+
+
+
+		float Speed = 1;
+		int x = wall1.getPosition().x + wall1.getRadius()/2;
+		int y = wall1.getPosition().y + wall1.getRadius()/2;
+		int x1 = shape.getPosition().x + shape.getRadius();
+		int y1 = shape.getPosition().y + shape.getRadius();
+		if (m == false) {
+			if (x > x1 & y > y1) {
+				wall1.move(-Speed, -Speed);
+			}
+			else if (x < x1 & y > y1) {
+				wall1.move(Speed, -Speed);
+			}
+			else if (x > x1 & y < y1) {
+				wall1.move(-Speed, Speed);
+			}
+			else if (x < x1 & y < y1) {
+				wall1.move(Speed, Speed);
+			}
+			else if (x < x1) {
+				wall1.move(Speed, 0);
+			}
+			else if (x > x1) {
+				wall1.move(-Speed, 0);
+			}
+			else if (y < y1) {
+				wall1.move(0, Speed);
+			}
+			else if (y > y1) {
+				wall1.move(0, -Speed);
+			}
+		}
+
+
+		/*
+		float Speed = 0.005;
+		int x = shape1.getPosition().x;
+		int y = shape1.getPosition().y;
+		int x1 = shape.getPosition().x;
+		int y1 = shape.getPosition().y;
+
+		if (x > x1 & y > y1) {
+			shape1.move(-Speed, -Speed);
+		}
+		else if (x < x1 & y > y1) {
+			shape1.move(Speed, -Speed);
+		}
+		else if (x > x1 & y < y1) {
+			shape1.move(-Speed, Speed);
+		}
+		else if (x < x1 & y < y1) {
+			shape1.move(Speed, Speed);
+		}
+		else if (x < x1) {
+			shape1.move(Speed, 0);
+		}
+		else if (x > x1) {
+			shape1.move(-Speed, 0);
+		}
+		else if (y < x1) {
+			shape1.move(0, Speed);
+		}
+		else if (y > x1) {
+			shape1.move(0, -Speed);
+		}
+		*/
+	}
+
+	return 0;
+}
